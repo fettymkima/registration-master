@@ -18,7 +18,7 @@ $menu =  [
 
 
 
-    'skin' => 'red',
+    'skin' => 'blue',
 
 
 
@@ -53,41 +53,67 @@ $menu =  [
             'can' =>'islogout'
         ],
         [
-            'text' => 'Advanced Search',
-            'url'  => 'search/form',
-            'icon' => 'th',
-            'can'=>'islogin'
-        ],
-        [
-            'text' => 'Fuatilia Lalamiko',
-            'url'  =>'complaints/followups',
-            'icon' => 'th',
-
-
-        ],
-        [
             'text' => 'Registration',
-            'url'  => 'complaints/create',
+            'url'  => '#',
             'icon' => 'th',
             'can'=>'islogin'
         ],
         [
-            'text'    => 'Complaints',
-            'icon'    => 'th',
-            'url'      => 'complaint/tab/1',
-//            'url'     =>'complaints/tab',
+            'text' => 'Advanced Search',
+            'url'  => '#',
+            'icon' => 'th',
             'can'=>'islogin'
-
+        ],
+        [
+            'text' => 'Fees',
+            'url'  =>'#',
+            'icon' => 'th',
 
 
         ],
+//        [
+//            'text' => 'View Fees',
+//            'url'  => 'complaints/create',
+//            'icon' => 'th',
+//            'can'=>'islogin'
+//        ],
+//        [
+//            'text'    => 'Fees Per Scheme',
+//            'icon'    => 'th',
+//            'url'      => 'complaint/tab/1',
+//            'can'=>'islogin'
+//        ],
 
         [
-            'text'    => 'Feedback',
-            'url'     =>'complaints/feedback/view',
+            'text'    => 'Failed Application',
             'icon'    => 'th',
+            'submenu' => [
+
+
+                [
+                    'text' => 'Manager',
+                    'url'  => '#',
+                ],
+
+
+                [
+                    'text' => 'Custodian',
+                    'url'  => '#',
+                ],
+
+                [
+                    'text' => 'Administrator',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Scheme',
+                    'url'  => '#',
+                ],
+
+            ],
             'can'=>'islogin'
         ],
+
         [
             'text'    => 'Report',
             'url'     =>'report/select',
@@ -124,55 +150,10 @@ $menu =  [
                     'url'  => 'userProfile/',
                 ],
 
-
-
-
-
             ],
             'can'=>'islogin'
         ],
 
-        [
-            'text'    => 'System Table Configuration',
-            'icon'    => 'th',
-            'submenu' => [
-
-
-                [
-                    'text' => 'Schemes',
-                    'url'  => 'config-scheme/create',
-                ],
-
-                [
-                    'text' => 'Social Security Info',
-                    'url'  => 'configuration/ssinfo',
-                ],
-
-                [
-                    'text' => 'Response Types',
-                    'url'  => 'configuration/response',
-                ],
-                [
-                    'text' => 'Complaint Types',
-                    'url'  => 'Configuration/complaint-type',
-                ],
-                [
-                    'text' => 'Complaint Status',
-                    'url'  => 'Configuration/complaint-status',
-                ],
-
-                [
-                    'text' => 'Complaint Receive Modes',
-                    'url'  => 'Configuration/complaint-receive-mode',
-                ],
-                [
-                    'text' => 'Complaint Status',
-                    'url'  => 'Configuration/complaint-status',
-                ],
-
-            ],
-            'can'=>'islogin'
-        ],
 
     ],
 

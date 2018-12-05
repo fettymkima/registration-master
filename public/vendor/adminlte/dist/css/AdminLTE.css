@@ -653,6 +653,7 @@ a:focus {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .sidebar-menu:hover {
   overflow: visible;
 }
