@@ -58,6 +58,14 @@ $menu =  [
             'icon' => 'th',
             'can'=>'islogin'
         ],
+
+        [
+            'text' => 'Registration Details',
+            'url'  => '#',
+            'icon' => 'th',
+            'can'=>'islogin'
+        ],
+
         [
             'text' => 'Advanced Search',
             'url'  => '#',

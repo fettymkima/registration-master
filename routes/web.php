@@ -103,6 +103,20 @@ Route::get('auth/email-authenticate/{token}', [
 
 Route::post('auth/create-password/{token}','Mail\EmailAuthController@store');
 
+//Scheme Controller
+Route::resource('scheme','Registration\SchemeController');
+
+//Administrator controller
+Route::resource('adminstrator','Registration\AdminstratotController');
+
+//Custodian Controller
+Route::resource('custodian','Registration\CustodianController');
+
+//Manager
+Route::resource('manager','Registration\ManagerController');
+
+//Chf Controller
+Route::resource('chf','Registration\ChfController');
 
 //configuration controller
 
