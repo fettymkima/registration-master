@@ -14,7 +14,7 @@ class CustodianController extends Controller
      */
     public function index()
     {
-        //
+        return view('custodian.custodian_tab');
     }
 
     /**

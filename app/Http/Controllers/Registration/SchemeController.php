@@ -14,7 +14,7 @@ class SchemeController extends Controller
      */
     public function index()
     {
-        //
+        return view('scheme.scheme_tab');
     }
 
     /**

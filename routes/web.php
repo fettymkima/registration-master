@@ -103,11 +103,17 @@ Route::get('auth/email-authenticate/{token}', [
 
 Route::post('auth/create-password/{token}','Mail\EmailAuthController@store');
 
+// Registration tab controller
+
+Route::get('registration/tab/register','Registration\RegistrationTabController@tabRegister');
+Route::get('registration/tab/view','Registration\RegistrationTabController@tabView');
+
+
 //Scheme Controller
 Route::resource('scheme','Registration\SchemeController');
 
 //Administrator controller
-Route::resource('adminstrator','Registration\AdminstratotController');
+Route::resource('adminstrator','Registration\AdminstratorController');
 
 //Custodian Controller
 Route::resource('custodian','Registration\CustodianController');

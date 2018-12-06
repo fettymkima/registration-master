@@ -14,7 +14,7 @@ class ManagerController extends Controller
      */
     public function index()
     {
-        //
+        return view('manager.manager_tab');
     }
 
     /**

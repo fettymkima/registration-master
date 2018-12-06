@@ -53,15 +53,43 @@ $menu =  [
             'can' =>'islogout'
         ],
         [
-            'text' => 'Registration',
-            'url'  => '#',
-            'icon' => 'th',
+            'text'    => 'Registration',
+            'icon'    => 'th',
+            'submenu' => [
+
+
+                [
+                    'text' => 'Scheme',
+                    'url'  => 'scheme',
+                ],
+
+
+                [
+                    'text' => 'Manager',
+                    'url'  => 'manager',
+                ],
+
+                [
+                    'text' => 'Administrator',
+                    'url'  => 'adminstrator',
+                ],
+                [
+                    'text' => 'Custodian',
+                    'url'  => 'custodian',
+                ],
+                [
+                    'text' => 'Chf',
+                    'url'  => 'chf',
+                ],
+
+            ],
             'can'=>'islogin'
         ],
 
+
         [
             'text' => 'Registration Details',
-            'url'  => '#',
+            'url'  => 'registration/tab/view',
             'icon' => 'th',
             'can'=>'islogin'
         ],
@@ -73,24 +101,31 @@ $menu =  [
             'can'=>'islogin'
         ],
         [
-            'text' => 'Fees',
-            'url'  =>'#',
-            'icon' => 'th',
+            'text'    => 'Fees',
+            'icon'    => 'th',
+            'submenu' => [
 
 
+                [
+                    'text' => 'Add Fees',
+                    'url'  => '#',
+                ],
+
+
+                [
+                    'text' => 'View Fees',
+                    'url'  => '#',
+                ],
+
+                [
+                    'text' => 'Fees Per Scheme',
+                    'url'  => '#',
+                ],
+
+            ],
+            'can'=>'islogin'
         ],
-//        [
-//            'text' => 'View Fees',
-//            'url'  => 'complaints/create',
-//            'icon' => 'th',
-//            'can'=>'islogin'
-//        ],
-//        [
-//            'text'    => 'Fees Per Scheme',
-//            'icon'    => 'th',
-//            'url'      => 'complaint/tab/1',
-//            'can'=>'islogin'
-//        ],
+
 
         [
             'text'    => 'Failed Application',
@@ -115,6 +150,10 @@ $menu =  [
                 ],
                 [
                     'text' => 'Scheme',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'chf',
                     'url'  => '#',
                 ],
 

@@ -14,7 +14,7 @@ class ChfController extends Controller
      */
     public function index()
     {
-        //
+        return view('chf.chf_tab');
     }
 
     /**
