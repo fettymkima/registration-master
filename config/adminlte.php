@@ -108,7 +108,7 @@ $menu =  [
 
                 [
                     'text' => 'Add Fees',
-                    'url'  => '#',
+                    'url'  => 'fees',
                 ],
 
 
