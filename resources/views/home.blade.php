@@ -7,12 +7,12 @@
 @stop
 
 @section('content')
-    <div class="row">
+    <div class="row" style="width: 100%;">
 
-        <div class="col-md-3 col-sm-2 col-xs-12">
+        <div class="col-md-3 col-sm-1 col-xs-12" style="width: 20%;">
             <div class="info-box bg-blue">
-                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-                <div class="info-box-content">
+                <span class="info-box-icon" style="width: 30%;"><i class="fa fa-folder-open" style="font-size: 24px; margin: 5px;"></i></span>
+                <div class="info-box-content" style="margin-left: 0; padding-left: 0;">
                     <span class="info-box-text">Scheme</span>
                     <span class="info-box-number">41,410</span>
                 </div>
@@ -24,10 +24,10 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-sm-2 col-xs-12">
+        <div class="col-md-3 col-sm-1 col-xs-12" style="width: 20%;">
             <div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-                <div class="info-box-content">
+                <span class="info-box-icon" style="width: 30%;"><i class="fa fa-folder-open" style="font-size: 24px; margin: 5px;"></i></span>
+                <div class="info-box-content" style="margin-left: 0; padding-left: 0;">
                     <span class="info-box-text">Administrator</span>
                     <span class="info-box-number">41,410</span>
                 </div>
@@ -39,10 +39,10 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-sm-2 col-xs-12">
+        <div class="col-md-3 col-sm-1 col-xs-12" style="width: 20%;">
             <div class="info-box bg-red">
-                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-                <div class="info-box-content">
+                <span class="info-box-icon" style="width: 30%;"><i class="fa fa-folder-open" style="font-size: 24px; margin: 5px;"></i></span>
+                <div class="info-box-content" style="margin-left: 0; padding-left: 0;">
                     <span class="info-box-text">Manager</span>
                     <span class="info-box-number">41,410</span>
                 </div>
@@ -54,10 +54,10 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-sm-2 col-xs-12">
-            <div class="info-box bg-green">
-                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-                <div class="info-box-content">
+        <div class="col-md-3 col-sm-1 col-xs-12" style="width: 20%;">
+            <div class="info-box bg-blue">
+                <span class="info-box-icon" style="width: 30%;"><i class="fa fa-folder-open" style="font-size: 24px; margin: 5px;"></i></span>
+                <div class="info-box-content" style="margin-left: 0; padding-left: 0;">
                     <span class="info-box-text">Custodian</span>
                     <span class="info-box-number">41,410</span>
                 </div>
@@ -69,166 +69,21 @@
             </div>
         </div>
 
-
-        <div class="row">
-            <div class="col-md-12" style="">
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Complaints By Line Graph</h3>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-wrench"></i></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="javascript:void(0);" id="open-graph">Open Complaints Graph</a></li>
-                                <li><a  href="javascript:void(0);" id="pending-graph"> Pending Complaints Graph</a></li>
-                                <li><a  href="javascript:void(0);" id="closed-graph">Closed Complaints Graph</a></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body" style="">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p class="text-center">
-                                    <strong>complaints</strong>
-                                </p>
-
-                                <div class="chart" id="empty">
-                                    <!-- Sales Chart Canvas -->
-                                    <canvas  class="salesChart" style="height: 180px; width: 645px;" width="967" height="270"></canvas>
-                                </div>
-                                <!-- /.chart-responsive -->
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-md-4">
-                                <div class="box box-default">
-                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Complaints  Pie Chart</h3>
-
-                                        <div class="box-tools pull-right">
-                                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                                        </div>
-                                    </div>
-                                    <!-- /.box-header -->
-                                    <div class="box-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="chart-responsive">
-                                                    <canvas id="pieChart" height="150">
-
-                                                    </canvas>
-                                                </div>
-                                                <!-- ./chart-responsive -->
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-md-4">
-                                                <ul class="chart-legend clearfix">
-                                                    <li><i class="fa fa-circle-o text-red"></i> Open</li>
-                                                    <li><i class="fa fa-circle-o text-yellow"></i>Pending </li>
-                                                    <li><i class="fa fa-circle-o text-green"></i> Closed</li>
-
-                                                </ul>
-                                            </div>
-                                            <!-- /.col -->
-                                        </div>
-                                        <!-- /.row -->
-                                    </div>
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-
-                    </div>
-                    <!-- /.box-footer -->
+        <div class="col-md-3 col-sm-1 col-xs-12" style="width: 20%;">
+            <div class="info-box bg-green">
+                <span class="info-box-icon" style="width: 30%;"><i class="fa fa-folder-open" style="font-size: 24px; margin: 5px;"></i></span>
+                <div class="info-box-content" style="margin-left: 0; padding-left: 0;">
+                    <span class="info-box-text">CHF</span>
+                    <span class="info-box-number">41,410</span>
                 </div>
-                <!-- /.box -->
-            </div>
-        </div>
-        {{--box panel for table --}}
-
-
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box">
-                    <div class="box-body" style="">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Summary of the Complaints (by Schemes)</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-
-                        <table class="table table-striped table-bordered table-condensed bootstrap-datatable datatable dataTable" id="summarybyscheme">
-                            <tr onclick="">
-                                <th>#</th>
-                                <th role="columnheader" class="sorting">Name of Scheme</th>
-                                <th>Open Complaints</th>
-                                <th>Pending Complaints</th>
-                                <th>Closed Complaints</th>
-                                <th>Tota Complaints</th>
-                            </tr>
-
-                        </table>
-                    </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
                 </div>
+                <span class="progress-description">
+                    70% Increase</span>
             </div>
         </div>
 
-        {{--complaints this month--}}
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box">
-                    <div class="box-body" style="">
-                        <div class="box-header with-border" style="background-color:#3C8DBC;color:white; ">
-                            <h3 class="box-title" >Complaints This month</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-
-                        <table class="table table-striped table-hover table-bordered" id="thismonth">
-                            <tr>
-                                <td>Open Complaints</td>
-                                <td>Pending Complaints</td>
-                                <td>Closed Complaints</td>
-                                <td>Total Complaints</td>
-
-                            </tr>
-
-                            <tr>
-                                <td id="open-thismonth"></td>
-                                <td id="pending-thismonth"></td>
-                                <td id="closed-thismonth"></td>
-                                <td id="total-thismonth"></td>
-
-                            </tr>
-                        </table>
-
-
-                    </div>
-                </div>
-            </div>
         </div>
 
 
