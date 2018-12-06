@@ -16,8 +16,6 @@ $menu =  [
 
     'logo_mini' => '<b>A</b>LT',
 
-
-
     'skin' => 'blue',
 
 
@@ -25,8 +23,6 @@ $menu =  [
     'layout' => null,
 
     'collapse_sidebar' => false,
-
-
 
     'dashboard_url' => 'home',
 
@@ -94,33 +90,67 @@ $menu =  [
 
 
                 [
-                    'text' => 'Scheme',
-                    'url'  => 'scheme/details',
+                    'text' => 'Manager',
+                    'url'  => 'registration/manager/details',
                 ],
 
 
                 [
-                    'text' => 'Manager',
-                    'url'  => 'manager/details',
+                    'text' => 'Custodian',
+                    'url'  => 'registration/custodian/details',
                 ],
 
                 [
                     'text' => 'Administrator',
-                    'url'  => 'administrator/details',
+                    'url'  => 'registration/administrator/details',
                 ],
                 [
-                    'text' => 'Custodian',
-                    'url'  => 'custodian/details',
+                    'text' => 'Scheme',
+                    'url'  => 'registration/scheme/details',
                 ],
                 [
                     'text' => 'Chf',
-                    'url'  => 'chf/details',
+                    'url'  => 'registration/chf/details',
                 ],
 
             ],
             'can'=>'islogin'
         ],
 
+
+        [
+            'text'    => 'Failed Application',
+            'icon'    => 'th',
+            'submenu' => [
+
+
+                [
+                    'text' => 'Manager',
+                    'url'  => 'failed/manager/application',
+                ],
+
+
+                [
+                    'text' => 'Custodian',
+                    'url'  => 'failed/custodian/application',
+                ],
+
+                [
+                    'text' => 'Administrator',
+                    'url'  => 'failed/administrator/application',
+                ],
+                [
+                    'text' => 'Scheme',
+                    'url'  => 'failed/scheme/application',
+                ],
+                [
+                    'text' => 'Chf',
+                    'url'  => 'failed/chf/application',
+                ],
+
+            ],
+            'can'=>'islogin'
+        ],
 
         [
             'text' => 'Advanced Search',
@@ -154,47 +184,13 @@ $menu =  [
             'can'=>'islogin'
         ],
 
-
-        [
-            'text'    => 'Failed Application',
-            'icon'    => 'th',
-            'submenu' => [
-
-
-                [
-                    'text' => 'Manager',
-                    'url'  => 'manager/failed/application',
-                ],
-
-
-                [
-                    'text' => 'Custodian',
-                    'url'  => 'custodian/failed/application',
-                ],
-
-                [
-                    'text' => 'Administrator',
-                    'url'  => 'administrator/failed/application',
-                ],
-                [
-                    'text' => 'Scheme',
-                    'url'  => 'scheme/failed/application',
-                ],
-                [
-                    'text' => 'chf',
-                    'url'  => 'chf/failed/application',
-                ],
-
-            ],
-            'can'=>'islogin'
-        ],
-
         [
             'text'    => 'Report',
             'url'     =>'report/select',
             'icon'    => 'th',
             'can'=>'islogin'
         ],
+
         [
             'text'    => 'System user Setting',
             'icon'    => 'th',

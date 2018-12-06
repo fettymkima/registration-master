@@ -109,28 +109,28 @@ Route::get('registration/tab/register','Registration\RegistrationTabController@t
 Route::get('registration/tab/view','Registration\RegistrationTabController@tabView');
 
 //Scheme Controller
-Route::get('scheme/failed/application','Registration\SchemeController@failedScheme');
-Route::get('scheme/details','Registration\SchemeController@schemeDetails');
+Route::get('failed/scheme/application','Registration\SchemeController@failedScheme');
+Route::get('registration/scheme/details','Registration\SchemeController@schemeDetails');
 Route::resource('scheme','Registration\SchemeController');
 
 //Administrator controller
-Route::get('administrator/failed/application','Registration\AdministratorController@failedAdministrator');
-Route::get('administrator/details','Registration\AdministratorController@administratorDetails');
+Route::get('failed/administrator/application','Registration\AdministratorController@failedAdministrator');
+Route::get('registration/administrator/details','Registration\AdministratorController@administratorDetails');
 Route::resource('administrator','Registration\AdministratorController');
 
 //Custodian Controller
-Route::get('custodian/failed/application','Registration\CustodianController@failedCustodian');
-Route::get('custodian/details','Registration\CustodianController@custodianDetails');
+Route::get('failed/custodian/application','Registration\CustodianController@failedCustodian');
+Route::get('registration/custodian/details','Registration\CustodianController@custodianDetails');
 Route::resource('custodian','Registration\CustodianController');
 
 //Manager
-Route::get('manager/failed/application','Registration\ManagerController@failedManager');
-Route::get('manager/details','Registration\ManagerController@managerDetails');
+Route::get('failed/manager/application','Registration\ManagerController@failedManager');
+Route::get('registration/manager/details','Registration\ManagerController@managerDetails');
 Route::resource('manager','Registration\ManagerController');
 
 //Chf Controller
-Route::get('chf/failed/application','Registration\ChfController@failedChf');
-Route::get('chf/details','Registration\ChfController@chfDetails');
+Route::get('failed/chf/application','Registration\ChfController@failedChf');
+Route::get('registration/chf/details','Registration\ChfController@chfDetails');
 Route::resource('chf','Registration\ChfController');
 
 //fees COntroller
