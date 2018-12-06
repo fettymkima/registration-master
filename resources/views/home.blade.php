@@ -91,25 +91,7 @@
         @stop
 
         @section('css')
-            <style>
-                .content {
-                    background-color:#ECF0F5;
 
-                }
-
-                .fa-sum:before {
-                    content: "\03a3";
-                    font-family: sans-serif;
-                }
-
-                .complaints-counts:hover{
-
-                    background-color: whitesmoke;
-
-                }
-
-
-            </style>
 
         @stop
 
@@ -121,38 +103,6 @@
 
             <script src="/complaints/js/complaint_byscheme.js"></script>
 
-            <script>
-
-                $(function (e) {
-
-
-                    $("#open-counts").click(function (ex) {
-
-                        window.location.href = "<?php
-                            use Illuminate\Support\Facades\URL;
-                            $tab =  2;
-                            echo URL::to('complaint/tab',$tab); ?>";
-
-                    });
-
-                    $("#pending-counts").click(function (ex) {
-
-                        window.location.href = "<?php
-                            $tab =  3;
-                            echo URL::to('complaint/tab',$tab); ?>";
-
-                    });
-                    $("#closed-counts").click(function (ex) {
-
-                        window.location.href = "<?php
-                            $tab =  4;
-                            echo URL::to('complaint/tab',$tab); ?>";
-
-                    });
-
-
-                });
-            </script>
 
 
         @stop

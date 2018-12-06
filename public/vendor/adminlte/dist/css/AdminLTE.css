@@ -654,15 +654,8 @@ a:focus {
   overflow: hidden;
 }
 
-/*.main-sidebar li:hover*/
- /*{*/
-  /*overflow: visible;*/
-  /*background-color: red;*/
-/*}*/
-
-.sidebar-menu li:hover {
+.sidebar-menu:hover {
   overflow: visible;
-  background-color: #455d75;
 }
 .sidebar-form,
 .sidebar-menu > li.header {
@@ -733,7 +726,6 @@ a:focus {
 .nav-tabs.control-sidebar-tabs > li:first-of-type > a:hover,
 .nav-tabs.control-sidebar-tabs > li:first-of-type > a:focus {
   border-left-width: 0;
-  background-color: red;
 }
 .nav-tabs.control-sidebar-tabs > li > a {
   border-radius: 0;
@@ -822,25 +814,25 @@ a:focus {
 }
 .control-sidebar-dark,
 .control-sidebar-dark + .control-sidebar-bg {
-  background: #72bf3f;
+  background: #222d32;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs {
-  border-bottom: #42d9f5;
+  border-bottom: #1c2529;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a {
-  background: #e8cd36;
+  background: #181f23;
   color: #b8c7ce;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus {
-  border-left-color: #f4f4b5;
-  border-bottom-color: #d2bcd2;
+  border-left-color: #141a1d;
+  border-bottom-color: #141a1d;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:active {
-  background: #e8cd36;
+  background: #1c2529;
 }
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover {
   color: #fff;
@@ -849,7 +841,7 @@ a:focus {
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:hover,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:focus,
 .control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:active {
-  background: #b66065;
+  background: #222d32;
   color: #fff;
 }
 .control-sidebar-dark .control-sidebar-heading,
@@ -857,13 +849,13 @@ a:focus {
   color: #fff;
 }
 .control-sidebar-dark .control-sidebar-menu > li > a:hover {
-  background: #a7b82c;
+  background: #1e282c;
 }
 .control-sidebar-dark .control-sidebar-menu > li > a .menu-info > p {
   color: #b8c7ce;
 }
 .control-sidebar-light {
-  color: #21c276;
+  color: #5e5e5e;
 }
 .control-sidebar-light,
 .control-sidebar-light + .control-sidebar-bg {
@@ -875,7 +867,7 @@ a:focus {
 }
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a {
   background: #e8ecf4;
-  color: #596cee;
+  color: #444444;
 }
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a,
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover,
@@ -893,11 +885,11 @@ a:focus {
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:focus,
 .control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:active {
   background: #f9fafc;
-  color: #f5392d;
+  color: #111;
 }
 .control-sidebar-light .control-sidebar-heading,
 .control-sidebar-light .control-sidebar-subheading {
-  color: #c11fc9;
+  color: #111;
 }
 .control-sidebar-light .control-sidebar-menu {
   margin-left: -14px;
@@ -906,7 +898,7 @@ a:focus {
   background: #f4f4f5;
 }
 .control-sidebar-light .control-sidebar-menu > li > a .menu-info > p {
-  color: #7ce6d0;
+  color: #5e5e5e;
 }
 /*
  * Component: Dropdown menus
@@ -927,7 +919,7 @@ a:focus {
 }
 .dropdown-menu > li > a:hover {
   background-color: #e1e3e9;
-  color: #5a8be6;
+  color: #333;
 }
 .dropdown-menu > .divider {
   background-color: #eee;
@@ -955,7 +947,7 @@ a:focus {
   background-color: #ffffff;
   padding: 7px 10px;
   border-bottom: 1px solid #f4f4f4;
-  color: #b44064;
+  color: #444444;
   font-size: 14px;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,
@@ -1010,7 +1002,7 @@ a:focus {
   text-decoration: none;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {
-  color: #d08635;
+  color: #444444;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 10px;
@@ -2456,8 +2448,8 @@ a:focus {
 }
 .nav-stacked > li.active > a,
 .nav-stacked > li.active > a:hover {
-  background-color: red;
-  color: #b4ec57;
+  background: transparent;
+  color: #444;
   border-top: 0;
   border-left-color: #3c8dbc;
 }
