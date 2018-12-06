@@ -17,6 +17,17 @@ class ManagerController extends Controller
         return view('manager.manager_tab');
     }
 
+    public function managerDetails()
+    {
+        return view('manager.manager_details');
+
+    }
+
+    public function failedManager()
+    {
+        return view('manager.failed_application');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

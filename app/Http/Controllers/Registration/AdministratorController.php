@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Registration;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AdminstratorController extends Controller
+class AdministratorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,6 +15,18 @@ class AdminstratorController extends Controller
     public function index()
     {
         return view('administrator.administrator_tab');
+    }
+
+
+    public function administratorDetails()
+    {
+        return view('administrator.administrator_details');
+
+    }
+
+    public function failedAdministrator()
+    {
+        return view('administrator.failed_application');
     }
 
     /**

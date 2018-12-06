@@ -17,6 +17,19 @@ class SchemeController extends Controller
         return view('scheme.scheme_tab');
     }
 
+    public function schemeDetails()
+    {
+        return view('scheme.scheme_details');
+
+    }
+
+
+    public function failedScheme()
+    {
+        return view('scheme.failed_application');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

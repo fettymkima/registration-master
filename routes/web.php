@@ -108,20 +108,29 @@ Route::post('auth/create-password/{token}','Mail\EmailAuthController@store');
 Route::get('registration/tab/register','Registration\RegistrationTabController@tabRegister');
 Route::get('registration/tab/view','Registration\RegistrationTabController@tabView');
 
-
 //Scheme Controller
+Route::get('scheme/failed/application','Registration\SchemeController@failedScheme');
+Route::get('scheme/details','Registration\SchemeController@schemeDetails');
 Route::resource('scheme','Registration\SchemeController');
 
 //Administrator controller
-Route::resource('adminstrator','Registration\AdminstratorController');
+Route::get('administrator/failed/application','Registration\AdministratorController@failedAdministrator');
+Route::get('administrator/details','Registration\AdministratorController@administratorDetails');
+Route::resource('administrator','Registration\AdministratorController');
 
 //Custodian Controller
+Route::get('custodian/failed/application','Registration\CustodianController@failedCustodian');
+Route::get('custodian/details','Registration\CustodianController@custodianDetails');
 Route::resource('custodian','Registration\CustodianController');
 
 //Manager
+Route::get('manager/failed/application','Registration\ManagerController@failedManager');
+Route::get('manager/details','Registration\ManagerController@managerDetails');
 Route::resource('manager','Registration\ManagerController');
 
 //Chf Controller
+Route::get('chf/failed/application','Registration\ChfController@failedChf');
+Route::get('chf/details','Registration\ChfController@chfDetails');
 Route::resource('chf','Registration\ChfController');
 
 //fees COntroller

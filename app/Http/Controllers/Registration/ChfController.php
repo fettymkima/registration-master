@@ -17,6 +17,18 @@ class ChfController extends Controller
         return view('chf.chf_tab');
     }
 
+    public function chfDetails()
+    {
+        return view('chf.chf_details');
+
+    }
+
+    public function failedchf()
+    {
+        return view('chf.failed_application');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

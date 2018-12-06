@@ -17,6 +17,18 @@ class CustodianController extends Controller
         return view('custodian.custodian_tab');
     }
 
+    public function custodianDetails()
+    {
+        return view('custodian.custodian_details');
+
+    }
+
+    public function failedCustodian()
+    {
+        return view('custodian.failed_application');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

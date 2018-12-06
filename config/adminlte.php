@@ -71,14 +71,14 @@ $menu =  [
 
                 [
                     'text' => 'Administrator',
-                    'url'  => 'adminstrator',
+                    'url'  => 'administrator',
                 ],
                 [
                     'text' => 'Custodian',
                     'url'  => 'custodian',
                 ],
                 [
-                    'text' => 'Chf',
+                    'text' => 'iChf',
                     'url'  => 'chf',
                 ],
 
@@ -88,11 +88,39 @@ $menu =  [
 
 
         [
-            'text' => 'Registration Details',
-            'url'  => 'registration/tab/view',
-            'icon' => 'th',
+            'text'    => 'Registration Details',
+            'icon'    => 'th',
+            'submenu' => [
+
+
+                [
+                    'text' => 'Scheme',
+                    'url'  => 'scheme/details',
+                ],
+
+
+                [
+                    'text' => 'Manager',
+                    'url'  => 'manager/details',
+                ],
+
+                [
+                    'text' => 'Administrator',
+                    'url'  => 'administrator/details',
+                ],
+                [
+                    'text' => 'Custodian',
+                    'url'  => 'custodian/details',
+                ],
+                [
+                    'text' => 'Chf',
+                    'url'  => 'chf/details',
+                ],
+
+            ],
             'can'=>'islogin'
         ],
+
 
         [
             'text' => 'Advanced Search',
@@ -135,26 +163,26 @@ $menu =  [
 
                 [
                     'text' => 'Manager',
-                    'url'  => '#',
+                    'url'  => 'manager/failed/application',
                 ],
 
 
                 [
                     'text' => 'Custodian',
-                    'url'  => '#',
+                    'url'  => 'custodian/failed/application',
                 ],
 
                 [
                     'text' => 'Administrator',
-                    'url'  => '#',
+                    'url'  => 'administrator/failed/application',
                 ],
                 [
                     'text' => 'Scheme',
-                    'url'  => '#',
+                    'url'  => 'scheme/failed/application',
                 ],
                 [
                     'text' => 'chf',
-                    'url'  => '#',
+                    'url'  => 'chf/failed/application',
                 ],
 
             ],
