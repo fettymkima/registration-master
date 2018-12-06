@@ -124,6 +124,10 @@ Route::resource('manager','Registration\ManagerController');
 //Chf Controller
 Route::resource('chf','Registration\ChfController');
 
+//fees COntroller
+Route::resource('fees','Fees\FeesController');
+
+
 //configuration controller
 
 Route::get('config-scheme/create','Configuration\SchemeController@create');
