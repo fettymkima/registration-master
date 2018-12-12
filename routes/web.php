@@ -107,6 +107,8 @@ Route::post('auth/create-password/{token}','Mail\EmailAuthController@store');
 
 Route::get('registration/tab/register','Registration\RegistrationTabController@tabRegister');
 Route::get('registration/tab/view','Registration\RegistrationTabController@tabView');
+Route::get('registration/scheme','Registration\SchemeController@schemeRegister');
+
 
 //Scheme Controller
 Route::get('failed/scheme/application','Registration\SchemeController@failedScheme');

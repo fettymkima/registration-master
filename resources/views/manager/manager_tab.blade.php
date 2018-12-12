@@ -39,7 +39,7 @@
         padding: 10px;" >
 
         <div class="tab-pane active" id="1" style="background-color: white">
-            {{--@include('complaints.edit',compact('edit_complaints'))--}}
+            @include('manager.general',compact('edit_complaints'))
 
         </div>
 

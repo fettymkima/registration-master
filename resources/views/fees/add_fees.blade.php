@@ -13,11 +13,14 @@
                     <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
                 @endif
             @endforeach
+                <h4 style="text-align: center;font-size: 24px">Add Fees</h4>
+
         </div>
         <!-- end .flash-message -->
 
         <form action="" method="post">
             {{ csrf_field() }}
+
             <br>
             <div class="col-md-6">
                 <div class="form-group">

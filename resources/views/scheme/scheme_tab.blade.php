@@ -33,36 +33,34 @@
         </li>
     </ul>
 
-    <div class="tab-content" style="  border-left: 1px solid #ddd;
-        border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;
-        padding: 10px;" >
+    <div class="tab-content">
 
         <div class="tab-pane active" id="1" style="background-color: white">
-            {{--@include('complaints.edit',compact('edit_complaints'))--}}
+            @include('scheme.general')
 
         </div>
 
         <div class="tab-pane" id="2" style="background-color: white">
 
-            {{--@include('complaints.open',compact('open_complaints'))--}}
+            @include('scheme.employer_particular')
 
         </div>
 
         <div class="tab-pane" id="3" style="background-color: white">
 
-            {{--@include('complaints.pending',compact('pending_complaints'))--}}
+            @include('scheme.board_of_trustee')
 
         </div>
 
         <div class="tab-pane" id="4" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('scheme.auditor_legal')
 
         </div>
 
         <div class="tab-pane" id="5" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('scheme.attachment')
 
         </div>
 
@@ -88,11 +86,6 @@
 @stop
 
 @section('js')
-
-    <script src="/complaints/js/tab_open.js"></script>
-    <script src="/complaints/js/tab_edit.js"></script>
-    <script src="/complaints/js/tab_pending.js"></script>
-    <script src="/complaints/js/tab_closed.js"></script>
 
     <script>
 

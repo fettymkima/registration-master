@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Registration;
 
+use App\Scheme;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -94,5 +95,11 @@ class SchemeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function schemeRegister()
+    {
+        return view('scheme.general', compact('scheme'));
+
     }
 }
