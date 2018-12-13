@@ -10,44 +10,50 @@
         {{ csrf_field() }}
         <div class="col-md-4">
 
-            <div class="form-group">
-                <label for="first_name">First Name:</label>
-                <input type="text" class="form-control" id="first_name" name="first_name">
-            </div>
+            <div style="width: 100%; height:57px" class="form-group"  >
 
-            <div class="form-group">
-                <label for="last_name">Lastname Name:</label>
-                <input type="text" class="form-control" id="last_name" name="last_name">
+                <div style="width: 50%; float: left;">
+                    <label style="width: 100%;">First Name:</label> <br>
+                    <input type="text" style="width: 100%;" class="form-control">
+                </div>
+                <div style="width: 45%; float: left; margin-left: 5%;">
+                    <label style="width: 100%;">Lastname Name:.</label> <br>
+                    <input type="text" style="width: 100%;"  class="form-control">
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="road">Nationality:</label>
                 <input type="text" class="form-control" id="road" name="road" >
             </div>
-
         </div>
 
         <div class="col-md-4">
 
+            <div style="width: 100%; height:57px" class="form-group"  >
 
-            <div class="form-group">
-                <label for="city">City.</label>
-                <input type="text" class="form-control" id="city" name="city">
+                <div style="width: 50%; float: left;">
+                    <label style="width: 100%;">City.</label> <br>
+                    <input type="text" style="width: 100%;" class="form-control">
+                </div>
+                <div style="width: 45%; float: left; margin-left: 5%;">
+                    <label style="width: 100%;">Postal No.</label> <br>
+                    <input type="text" style="width: 100%;"  class="form-control">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="postal">Postal No.</label>
-                <input type="text" class="form-control" id="postal" name="postal">
-            </div>
 
             <div class="form-group">
                 <label for="occupation">Occupation:</label>
                 <input type="text" class="form-control" id="occupation" name="occupation" >
             </div>
-
+            
         </div>
 
         <div class="col-md-4">
+
+
+
 
             <div class="form-group">
                 <label for="start_date">Date of Appointment:</label>
@@ -61,6 +67,8 @@
 
 
             <button type="submit" class="btn btn-primary" id="save-create">Submit</button>
+            <button type="submit" class="btn btn-success" id="save-create">Add +</button>
+
 
         </div>
 
