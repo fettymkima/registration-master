@@ -39,45 +39,45 @@
         padding: 10px;" >
 
         <div class="tab-pane active" id="1" style="background-color: white">
-            {{--@include('complaints.edit',compact('edit_complaints'))--}}
+            @include('custodian.general')
 
         </div>
 
         <div class="tab-pane" id="2" style="background-color: white">
 
-            {{--@include('complaints.open',compact('open_complaints'))--}}
+            @include('custodian.management')
 
         </div>
 
         <div class="tab-pane" id="3" style="background-color: white">
 
-            {{--@include('complaints.pending',compact('pending_complaints'))--}}
+            @include('custodian.directors')
 
         </div>
 
         <div class="tab-pane" id="4" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('custodian.top_management')
 
         </div>
         <div class="tab-pane" id="5" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('custodian.audito_legal_banker')
 
         </div>
         <div class="tab-pane" id="6" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('custodian.share_capital')
 
         </div>
         <div class="tab-pane" id="7" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('custodian.business_particular')
 
         </div>
         <div class="tab-pane" id="8" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('custodian.attachment')
 
         </div>
 
