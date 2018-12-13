@@ -10,14 +10,16 @@
                 <input type="text" class="form-control" id="employer_name" name="employer_name">
             </div>
 
-            <div class="form-group">
-                <label for="plot_no">Plot No.</label>
-                <input type="text" class="form-control" id="plot_no" name="plot_no">
-            </div>
+            <div style="width: 100%; height:57px" class="form-group"  >
 
-            <div class="form-group">
-                <label for="road">Road/St.</label>
-                <input type="text" class="form-control" id="road" name="road" >
+                <div style="width: 50%; float: left;">
+                    <label style="width: 100%;">Plot No.</label> <br>
+                    <input type="text" style="width: 100%;" class="form-control">
+                </div>
+                <div style="width: 45%; float: left; margin-left: 5%;">
+                    <label style="width: 100%;">Road/St.</label> <br>
+                    <input type="text" style="width: 100%;"  class="form-control">
+                </div>
             </div>
 
             <div class="form-group">
@@ -28,6 +30,7 @@
         </div>
 
         <div class="col-md-4">
+
 
             <div class="form-group">
                 <label for="postal">Postal No.</label>
@@ -47,6 +50,7 @@
         </div>
 
         <div class="col-md-4">
+
             <div class="form-group">
                 <label for="email">E-mail:</label>
                 <input type="email" class="form-control" id="email" name="email">
@@ -62,7 +66,11 @@
                 <input type="text" class="form-control" id="no_member" name="no_member">
             </div>
 
+
             <button type="submit" class="btn btn-primary" id="save-create">Submit</button>
+            <button type="submit" class="btn btn-success" id="save-create">Add +</button>
+
+
 
         </div>
 
