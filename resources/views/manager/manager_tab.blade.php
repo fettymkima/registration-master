@@ -24,7 +24,7 @@
         </li>
         <li><a href="#3" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Directors</a>
         </li>
-        <li><a href="#4" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Managment</a>
+        <li><a href="#4" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Executive</a>
         </li>
         <li><a href="#5" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Auditor,Legal,Bankers</a>
         </li>
@@ -39,53 +39,48 @@
         padding: 10px;" >
 
         <div class="tab-pane active" id="1" style="background-color: white">
-            @include('manager.general',compact('edit_complaints'))
+            @include('manager.general')
 
         </div>
 
         <div class="tab-pane" id="2" style="background-color: white">
 
-            {{--@include('complaints.open',compact('open_complaints'))--}}
+            @include('manager.management')
 
         </div>
 
         <div class="tab-pane" id="3" style="background-color: white">
 
-            {{--@include('complaints.pending',compact('pending_complaints'))--}}
+            @include('manager.board_director')
 
         </div>
 
         <div class="tab-pane" id="4" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('manager.top_management')
 
         </div>
         <div class="tab-pane" id="5" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('manager.auditor_legal')
 
         </div>
         <div class="tab-pane" id="6" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('manager.share_capital')
 
         </div>
         <div class="tab-pane" id="7" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('manager.business_particular')
 
         </div>
         <div class="tab-pane" id="8" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('manager.attachment')
 
         </div>
 
-        <div class="tab-pane" id="5" style="background-color: white;">
-
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
-
-        </div>
 
 
     </div>

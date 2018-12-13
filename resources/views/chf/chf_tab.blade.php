@@ -20,7 +20,7 @@
         <li class="active">
             <a  href="#1" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>General</a>
         </li>
-        <li><a href="#2" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Taarifa Za Mkaguzi wa Mahesabu</a>
+        <li><a href="#2" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Particulars of Auditor</a>
         </li>
         <li><a href="#3" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span>Taarifa za wilaya/Manispaa</a>
         </li>
@@ -33,25 +33,25 @@
         padding: 10px;" >
 
         <div class="tab-pane active" id="1" style="background-color: white">
-            {{--@include('complaints.edit',compact('edit_complaints'))--}}
+            @include('chf.general')
 
         </div>
 
         <div class="tab-pane" id="2" style="background-color: white">
 
-            {{--@include('complaints.open',compact('open_complaints'))--}}
+            @include('chf.auditor')
 
         </div>
 
         <div class="tab-pane" id="3" style="background-color: white">
 
-            {{--@include('complaints.pending',compact('pending_complaints'))--}}
+            @include('chf.wilaya_manispaa')
 
         </div>
 
         <div class="tab-pane" id="4" style="background-color: white;">
 
-            {{--@include('complaints.closed',compact('closed_complaints'))--}}
+            @include('chf.attachment')
 
         </div>
 
