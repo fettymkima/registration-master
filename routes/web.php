@@ -19,19 +19,13 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function () {
 
-    $user_id =  Auth::id();
-    $color = DB::table('users')
-        ->select('color_code')
-        ->join('colors','colors.color_id','=','users.color_id')
-        ->where('id',$user_id)
-        ->first();
+    Route::get('test', function () {
 
+        echo  9090;
 
-    echo   $color->color_code;
+    });
 
-});
 
 
 // get default url
@@ -113,6 +107,10 @@ Route::get('registration/scheme','Registration\SchemeController@schemeRegister')
 //Scheme Controller
 Route::get('failed/scheme/application','Registration\SchemeController@failedScheme');
 Route::get('registration/scheme/details','Registration\SchemeController@schemeDetails');
+Route::get('scheme/tab/{tab}','Registration\SchemeController@schemeTab');
+Route::post('scheme/storeEmpParticulars','Registration\SchemeController@storeEmployersParticulars');
+Route::post('scheme/storeBoard','Registration\SchemeController@schemeBoard');
+
 Route::resource('scheme','Registration\SchemeController');
 
 //Administrator controller

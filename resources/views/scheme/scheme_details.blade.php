@@ -102,7 +102,7 @@
 
             $('#myTab li:nth-child('+tab+') a').tab('show');
 
-
+            alert("ok");
 
         });
     </script>

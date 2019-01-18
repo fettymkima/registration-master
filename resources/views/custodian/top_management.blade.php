@@ -1,6 +1,5 @@
-
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
-    <h4>PARTICULARS OF THE TOP MANAGEMENT OF THE CUSTODIAN</h4>
+    <h4>General Details</h4>
 
 </div>
 <hr>
@@ -36,7 +35,6 @@
 
             </div>
 
-
             <div class="col-md-4">
 
                 <div style="width: 100%; height:57px" class="form-group"  >
@@ -51,21 +49,16 @@
                     </div>
                 </div>
 
-
-
                 <div class="form-group">
                     <label for="residence">Academic and Professional Qualifications</label>
                     <input type="text" class="form-control" id="residence" name="residence">
                 </div>
 
-
                 <button  type="button" class="btn btn-success">Add +</button>
 
                 <button type="submit" class="btn btn-primary" id="save-create">Next</button>
 
-
             </div>
-
 
         </form>
     </div>

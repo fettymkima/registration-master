@@ -11,4 +11,11 @@ class Category extends Model
     protected $primaryKey = 'category_id';
 
 
+    public static  function getCategory(){
+
+
+        return Category::all()->toArray();
+
+    }
+
 }

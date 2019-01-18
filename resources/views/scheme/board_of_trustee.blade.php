@@ -1,12 +1,12 @@
-@section('content_header')
 
-    <link href="https://adminlte.io/themes/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" type="text/css" rel="stylesheet">
 
-@stop
-<div><h4 style="text-align: center">Particulars of Proposed Board of Trustees</h4></div>
-<hr>
-<div class="row" style="margin-left: 10px; margin-top: 10px;">
-    <form action="#" method="post">
+<div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
+    <h4>Particulars of Proposed Board of Trustees</h4>
+
+</div>
+
+<div class="row">
+    <form action="{{action('Registration\SchemeController@schemeBoard')}}" method="post">
         {{ csrf_field() }}
         <div class="col-md-4">
 
@@ -14,17 +14,26 @@
 
                 <div style="width: 50%; float: left;">
                     <label style="width: 100%;">First Name:</label> <br>
-                    <input type="text" style="width: 100%;" class="form-control">
+                    <input type="text" style="width: 100%;" class="form-control" name="firstname">
                 </div>
                 <div style="width: 45%; float: left; margin-left: 5%;">
                     <label style="width: 100%;">Lastname Name:.</label> <br>
-                    <input type="text" style="width: 100%;"  class="form-control">
+                    <input type="text" style="width: 100%;"  class="form-control" name="lastname">
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="road">Nationality:</label>
-                <input type="text" class="form-control" id="road" name="road" >
+            <div class="form-group" style="width: 100%; float: left;">
+                <label for="nationality" style="width: 100%;">Nationality:</label>
+
+                <select class="form-control" id="nationality" name="nationality" style="width: 100%;">
+
+                    @foreach($countries as $country)
+
+                        <option class="form-control" value="{{$country['id']}}">{{$country['name']}}</option>
+
+                    @endforeach
+
+                </select>
             </div>
         </div>
 
@@ -34,11 +43,11 @@
 
                 <div style="width: 50%; float: left;">
                     <label style="width: 100%;">City.</label> <br>
-                    <input type="text" style="width: 100%;" class="form-control">
+                    <input type="text" style="width: 100%;" class="form-control" name="city">
                 </div>
                 <div style="width: 45%; float: left; margin-left: 5%;">
                     <label style="width: 100%;">Postal No.</label> <br>
-                    <input type="text" style="width: 100%;"  class="form-control">
+                    <input type="text" style="width: 100%;"  class="form-control" name="postal">
                 </div>
             </div>
 
@@ -62,11 +71,11 @@
 
             <div class="form-group">
                 <label for="represent_as">Represent as:</label>
-                <input type="text" class="form-control" id="represent_as" name="represent_as">
+                <input type="text" class="form-control" id="represent_as" name="representation_type">
             </div>
 
 
-            <button type="submit" class="btn btn-primary" id="save-create">Submit</button>
+            <button type="submit" class="btn btn-primary" id="save-create">Next</button>
             <button type="submit" class="btn btn-success" id="save-create">Add +</button>
 
 
@@ -87,13 +96,7 @@
 @stop
 
 @section('js')
-    <script>
 
-        $('#datepicker').datepicker({
-            autoclose: true,
-            format: 'yyyy-mm-dd'
-        });
-    </script>
 
 
 @stop

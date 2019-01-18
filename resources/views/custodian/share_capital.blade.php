@@ -1,6 +1,5 @@
-
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
-    <h4>SHARE CAPITAL</h4>
+    <h4>Share Capital</h4>
 
 </div>
 <hr>

@@ -1,8 +1,8 @@
-
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
-    <h4>BOARD OF DIRECTORS</h4>
+    <h4>Board Of Directors</h4>
 
 </div>
+<hr>
 <hr>
     <div class="row">
         <form action="#" method="post">

@@ -1,6 +1,5 @@
-
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
-    <h4>Attachements & Aggrements</h4>
+    <h4>General Details</h4>
 
 </div>
 <hr>

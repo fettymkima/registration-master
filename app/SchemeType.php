@@ -11,7 +11,7 @@ class SchemeType extends Model
     protected $primaryKey = 'scheme_type_id';
 
 
-    public  function schemeType(){
+    public  static function schemeType(){
 
         return SchemeType::all()->toArray();
 
