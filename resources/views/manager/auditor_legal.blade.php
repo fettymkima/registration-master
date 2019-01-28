@@ -133,7 +133,7 @@
                 <input type="text" class="form-control" id="scheme_name" name="scheme_name" >
             </div>
 
-            <button type="submit" class="btn btn-primary" id="save-create">Submit</button>
+            <button type="submit" class="btn btn-primary" id="save-create">Next</button>
 
         </div>
     </form>
