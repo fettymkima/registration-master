@@ -1,6 +1,5 @@
-
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
-    <h4>PARTICULARS OF AUDITOR, LEGAL ADVISORS AND BANKERS</h4>
+    <h4>Particulars of Auditor and Legal Advisor</h4>
 
 </div>
 <hr>

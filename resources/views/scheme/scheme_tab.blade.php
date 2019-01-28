@@ -13,7 +13,7 @@
     </div> <!-- end .flash-message -->
 
     {{--get the tab selected from the controller in order to show it.--}}
-    {{--<input type="hidden"  value="{{$tab}}" id="tab-selected">--}}
+    <input type="hidden"  value="{{$tab}}" id="tab-selected">
     {{--end get tab value--}}
 
     <ul class="nav nav-tabs" id="myTab">
@@ -33,7 +33,9 @@
         </li>
     </ul>
 
-    <div class="tab-content">
+    <div class="tab-content" style="  border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;
+        padding: 10px;" >
 
         <div class="tab-pane active" id="1" style="background-color: white">
             @include('scheme.general')
@@ -89,15 +91,17 @@
 
     <script>
 
-        $(function (e) {
+       $(document).ready(function (e) {
 
-            var tab  = $("#tab-selected").val();
+           alert("ok");
+           var tab  = $("#tab-selected").val();
 
-            $('#myTab li:nth-child('+tab+') a').tab('show');
+           $('#myTab li:nth-child('+tab+') a').tab('show');
 
 
 
-        });
+
+       });
     </script>
 
 

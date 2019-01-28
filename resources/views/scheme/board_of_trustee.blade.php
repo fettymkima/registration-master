@@ -1,3 +1,5 @@
+
+
 <div class="col-md-12" style="background-color: #2C435B; color: white; margin-bottom: 5px;">
     <h4>Particulars of Proposed Board of Trustees</h4>
 
@@ -54,7 +56,7 @@
                 <label for="occupation">Occupation:</label>
                 <input type="text" class="form-control" id="occupation" name="occupation" >
             </div>
-
+            
         </div>
 
         <div class="col-md-4">
@@ -98,3 +100,7 @@
 
 
 @stop
+
+
+
+

@@ -56,9 +56,8 @@ $menu =  [
 
                 [
                     'text' => 'Scheme',
-                    'url'  => 'scheme',
+                    'url'  => 'scheme/tab/1',
                 ],
-
 
                 [
                     'text' => 'Manager',
