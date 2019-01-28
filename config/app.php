@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Complaints System'),
+    'name' => env('APP_NAME', 'Registration System'),
 
     /*
     |--------------------------------------------------------------------------
