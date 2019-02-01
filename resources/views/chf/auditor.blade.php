@@ -1,15 +1,13 @@
 <div><h4 style="text-align: center">Particulars of Auditor</h4></div>
 <hr>
 <div class="row" style="margin-left: 10px; margin-top: 10px;">
-    <form action="#" method="post">
+    <form action="{{action('Registration\ChfController@storeChfAuditor')}}" method="post">
         {{ csrf_field() }}
         <div class="col-md-4">
 
-
-
             <div class="form-group">
-                <label for="username">Auditor Name:</label>
-                <input type="text" class="form-control" id="username" name="username">
+                <label for="name_chf_auditors">Auditor Name:</label>
+                <input type="text" class="form-control" id="name_chf_auditors" name="name_chf_auditors">
             </div>
 
             <button type="submit" class="btn btn-primary" id="save-create">Next</button>
@@ -19,8 +17,8 @@
         <div class="col-md-4">
 
             <div class="form-group">
-                <label for="postal">Phone Number.</label>
-                <input type="text" class="form-control" id="postal" name="email">
+                <label for="phone_chf_aditors">Phone Number.</label>
+                <input type="text" class="form-control" id="phone_chf_aditors" name="phone_chf_aditors">
             </div>
 
         </div>
@@ -30,8 +28,8 @@
 
 
             <div class="form-group">
-                <label for="postal">Postal Address:</label>
-                <input type="text" class="form-control" id="postal" name="postal">
+                <label for="postal_chf_auditors">Postal Address:</label>
+                <input type="text" class="form-control" id="postal_chf_auditors" name="postal_chf_auditors">
             </div>
 
         </div>

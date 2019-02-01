@@ -61,7 +61,7 @@ $menu =  [
 
                 [
                     'text' => 'Manager',
-                    'url'  => 'manager',
+                    'url'  => 'manager/tab/1',
                 ],
 
                 [
@@ -74,7 +74,7 @@ $menu =  [
                 ],
                 [
                     'text' => 'iChf',
-                    'url'  => 'chf',
+                    'url'  => 'chf/tab/1',
                 ],
 
             ],

@@ -41,9 +41,6 @@ Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('user/register','Admin\UserController@create');
 Route::get('user/edit','Admin\UserController@create');
 Route::get('user/delete','Admin\UserController@create');
-
-
-
 Route::resource('user','Admin\UserController');
 
 //Role route
@@ -110,7 +107,6 @@ Route::get('registration/scheme/details','Registration\SchemeController@schemeDe
 Route::get('scheme/tab/{tab}','Registration\SchemeController@schemeTab');
 Route::post('scheme/storeEmpParticulars','Registration\SchemeController@storeEmployersParticulars');
 Route::post('scheme/storeBoard','Registration\SchemeController@schemeBoard');
-
 Route::resource('scheme','Registration\SchemeController');
 
 //Administrator controller
@@ -126,12 +122,19 @@ Route::resource('custodian','Registration\CustodianController');
 //Manager
 Route::get('failed/manager/application','Registration\ManagerController@failedManager');
 Route::get('registration/manager/details','Registration\ManagerController@managerDetails');
+Route::get('manager/tab/{tab}','Registration\ManagerController@managerTab');
+Route::post('manager/storeMgtParticular','Registration\ManagerController@storeManagementParticular');
 Route::resource('manager','Registration\ManagerController');
 
 //Chf Controller
 Route::get('failed/chf/application','Registration\ChfController@failedChf');
 Route::get('registration/chf/details','Registration\ChfController@chfDetails');
+Route::get('chf/tab/{tab}','Registration\ChfController@chfTab');
+Route::post('chf/AuditorParticular','Registration\ChfController@storeChfAuditor');
+Route::post('chf/ChfDistrict','Registration\ChfController@storeChfDistrict');
+Route::post('chf/storeAttachment','Registration\ChfController@storeAttachment');
 Route::resource('chf','Registration\ChfController');
+
 
 //fees COntroller
 Route::resource('fees','Fees\FeesController');

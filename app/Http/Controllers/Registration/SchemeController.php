@@ -15,24 +15,13 @@ use Illuminate\Support\Facades\Session;
 
 class SchemeController extends Controller
 {
-
-
-    public  function  test(){
-
-        echo  "params";
-    }
-
-
     public function index($tab)
     {
-
         $categories =  Category::getCategory();
         $membership_types =  MembershipType::getMembershipType();
         $scheme_types =  SchemeType::schemeType();
         $countries =  Country::getCountries();
-
         return view('scheme.scheme_tab',compact('tab','countries','categories','membership_types','scheme_types'));
-
 
     }
 
@@ -79,12 +68,10 @@ class SchemeController extends Controller
      */
     public function store(Request $request)
     {
-
         //general details validations............
         $this->generalDetailsValidations($request);
 
         $scheme = new Scheme();
-
         $scheme->scheme_name =  $request->get("scheme_name");
         $scheme->scheme_type_id =  $request->get("scheme_type");
         $scheme->town =  $request->get("town");
@@ -107,12 +94,14 @@ class SchemeController extends Controller
 
         $success = $scheme->save();
 
-        if ($success){
+        if ($success)
+        {
 
             Session::flash('alert-success', $request->get('general-success').'General Details successful saved');
         }
 
-        else {
+        else
+        {
 
            return  redirect("scheme/tab/1");
 
@@ -120,10 +109,9 @@ class SchemeController extends Controller
 
         $scheme_id =  Scheme::orderBy('scheme_id','desc')->first()->scheme_id;
 
-        Session::set('scheme_id', $scheme_id);
+        Session::put('scheme_id', $scheme_id);
 
         return redirect("scheme/tab/2");
-
     }
 
 

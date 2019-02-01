@@ -122,7 +122,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary" id="save-create">Submit</button>
+            <button type="submit" class="btn btn-primary" id="save-create">Next</button>
             <button type="submit" class="btn btn-success" id="save-create">Add +</button>
 
 

@@ -66,7 +66,7 @@
 
             <div class="form-group">
                 <label for="start_date">Date of Appointment:</label>
-                <input autocomplete="off" type="text" class="form-control appointment_date" id="datepicker" name="appointment_date" >
+                <input autocomplete="off" type="text" class="form-control appointment_date datepicker" data-date-format="yyyy/mm/dd" id="datepicker" name="appointment_date" >
             </div>
 
             <div class="form-group">
@@ -91,13 +91,12 @@
 
 @stop
 
-@section('css')
-
-@stop
-
 @section('js')
-
-
+    <script>
+        $('.datepicker').datepicker({
+            startDate: '-3d'
+        })
+    </script>
 
 @stop
 

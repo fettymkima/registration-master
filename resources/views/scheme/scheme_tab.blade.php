@@ -93,13 +93,9 @@
 
        $(document).ready(function (e) {
 
-           alert("ok");
            var tab  = $("#tab-selected").val();
 
            $('#myTab li:nth-child('+tab+') a').tab('show');
-
-
-
 
        });
     </script>

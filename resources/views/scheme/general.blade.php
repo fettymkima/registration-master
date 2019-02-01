@@ -113,13 +113,6 @@
 
             <div class="col-md-4">
 
-
-
-                {{--<div class="form-group">--}}
-                    {{--<label for="username">Username:</label>--}}
-                    {{--<input type="text" class="form-control" id="username" name="username">--}}
-                {{--</div>--}}
-
                 <div class="form-group">
                     <label for="postal">Postal No.:</label>
                     <input type="text" class="form-control" id="postal" name="postal">
@@ -174,7 +167,7 @@
 
                 <div class="form-group">
                     <label for="no_workforce">Total Number of Workforce:</label>
-                    <input type="no_workforce" class="form-control" id="no_workforce" name="no_workforce">
+                    <input type="text" class="form-control" id="no_workforce" name="no_workforce">
 
                     @if ($errors->has('no_workforce'))
 
@@ -219,6 +212,7 @@
 
                     @endif
                 </div>
+
                 <div class="form-group">
                     <label for="contribution_formula_employee">Contribution Formula for employee:</label>
                     <input type="text" class="form-control" id="contribution_formula_employee" name="contribution_formula_employee">
@@ -257,7 +251,6 @@
 
                     @endif
                 </div>
-
 
                 <button type="submit" class="btn btn-primary" id="save-create">Next</button>
 

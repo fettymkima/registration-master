@@ -13,7 +13,7 @@
     </div> <!-- end .flash-message -->
 
     {{--get the tab selected from the controller in order to show it.--}}
-    {{--<input type="hidden"  value="{{$tab}}" id="tab-selected">--}}
+    <input type="hidden"  value="{{$tab}}" id="tab-selected">
     {{--end get tab value--}}
 
     <ul class="nav nav-tabs" id="myTab">
@@ -104,22 +104,14 @@
 @stop
 
 @section('js')
-
-    <script src="/complaints/js/tab_open.js"></script>
-    <script src="/complaints/js/tab_edit.js"></script>
-    <script src="/complaints/js/tab_pending.js"></script>
-    <script src="/complaints/js/tab_closed.js"></script>
-
     <script>
 
-        $(function (e) {
+        $(document).ready(function (e) {
 
+            alert("ok");
             var tab  = $("#tab-selected").val();
 
             $('#myTab li:nth-child('+tab+') a').tab('show');
-
-
-
         });
     </script>
 

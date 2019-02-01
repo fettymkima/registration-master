@@ -6,18 +6,17 @@
         <div class="col-md-4">
 
             <div class="form-group">
-                <label for="username">Total Authorized Capital:</label>
-                <input type="text" class="form-control" id="username" name="username">
+                <label for="manager_share_autho">Total Authorized Capital:</label>
+                <input type="text" class="form-control" id="manager_share_autho" name="manager_share_autho">
             </div>
             <button type="submit" class="btn btn-primary" id="save-create">Next</button>
-
         </div>
 
         <div class="col-md-4">
 
             <div class="form-group">
-                <label for="phone_no">Total Paid-up Capital</label>
-                <input type="text" class="form-control" id="phone_no" name="phone_no" >
+                <label for="manager_share_paid">Total Paid-up Capital</label>
+                <input type="text" class="form-control" id="manager_share_paid" name="manager_share_paid" >
             </div>
 
         </div>
